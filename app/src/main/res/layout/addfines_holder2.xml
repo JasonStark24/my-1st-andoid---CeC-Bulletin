@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fines_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/program_fines"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/datetime_fines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/username_fines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/datetime_fines"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/program_fines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username_fines"
+                android:padding="5dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

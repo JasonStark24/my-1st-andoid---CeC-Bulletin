@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:label="@string/account_setup"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.micropulse7.cec_bulletin.SetupAccount">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="false">
+
+        <TextView
+            android:text="@string/account_setup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="25sp"
+            android:textColor="#f1f0f0"
+            android:clickable="false"
+            android:textColorHighlight="#f7f7f7"
+            android:layout_marginTop="1dp"
+            android:id="@+id/Setup_acct"
+            android:gravity="center"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            app:srcCompat="@mipmap/profile_images"
+            android:id="@+id/SetupImageBtn"
+            android:scaleType="centerCrop"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#00ffffff"
+            android:layout_below="@+id/Setup_acct"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/profile"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+
+                android:ems="10"
+                android:id="@+id/Setup_IdNumber"
+                android:background="@drawable/input_background"
+                android:layout_weight="1"
+                android:hint="ID numer " />
+
+            <Button
+                android:text="Generate"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Bgenerate"
+
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:background="@drawable/input_background"
+            android:layout_marginTop="10dp"
+
+            android:padding="15dp"
+            android:id="@+id/HApp"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/SetupNameField"
+            android:layout_below="@+id/Setup_IdNumber"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/enter_your_display_name"
+            android:ems="10"
+            android:background="@drawable/input_background"
+            android:layout_marginTop="10dp"
+            android:padding="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/setup_Course2"
+            android:ems="10"
+            android:background="@drawable/input_background"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:hint="Course" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/setup_Sex2"
+            android:ems="10"
+            android:background="@drawable/input_background"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:hint="Sex" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Account_type"
+            android:ems="10"
+            android:background="@drawable/input_background"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:hint="Account" />
+
+
+        <Button
+            android:text="@string/finish_setup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SetupSubmitBtn"
+            android:background="@drawable/btn_background"
+            android:textColor="@color/colorPrimary"
+            android:padding="15dp"
+            android:layout_below="@+id/setup_Address"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</ScrollView>

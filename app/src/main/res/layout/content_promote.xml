@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.micropulse7.cec_bulletin.Promote"
+    tools:showIn="@layout/app_bar_promote">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/idTres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView01"
+            android:layout_toLeftOf="@+id/submitIdBtn"
+            android:layout_toStartOf="@+id/submitIdBtn"
+            android:ems="10"
+            android:hint="Input here"
+            android:inputType="textPersonName|number|numberSigned"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="99dp" />
+
+        <TextView
+            android:id="@+id/textView01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/idTres"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/idTres"
+            android:text="Enter the School ID of our new treasurer :"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="63dp" />
+
+        <Button
+            android:id="@+id/submitIdBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/idTres"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Submit"
+            tools:layout_editor_absoluteX="255dp"
+            tools:layout_editor_absoluteY="99dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1029709898418",
+    "firebase_url": "https://cec-bulletin.firebaseio.com",
+    "project_id": "cec-bulletin",
+    "storage_bucket": "cec-bulletin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029709898418:android:0d7607e1f0a725db",
+        "android_client_info": {
+          "package_name": "com.example.micropulse7.cec_bulletin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029709898418-48bu71hlg9793hf7s6911r8jto9ofk1u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.micropulse7.cec_bulletin",
+            "certificate_hash": "5C57169F6EECE294B594E7E48695676DC4CB7078"
+          }
+        },
+        {
+          "client_id": "1029709898418-fvargm8o4acjb4tpiuiuf1h7t4gniifj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXZoexj8OeCXRP9a_k3JvyniQSj3CEkUQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029709898418-fvargm8o4acjb4tpiuiuf1h7t4gniifj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

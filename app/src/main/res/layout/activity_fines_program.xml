@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fines_program"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.micropulse7.cec_bulletin.FinesProgram">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/navigation_action_bar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/Nprogram" />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/ic_send"
+            android:id="@+id/fab"
+            android:tint="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:fabSize="mini" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/fab"
+            android:layout_toStartOf="@+id/fab"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input"
+                android:hint="@string/input"/>
+
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_headerlayout"
+        app:menu="@menu/navigation_menu">
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout >

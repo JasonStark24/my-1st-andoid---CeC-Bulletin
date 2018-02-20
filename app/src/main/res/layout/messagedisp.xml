@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.micropulse7.cec_bulletin.BulletinPostAcc">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/navigation_action_bar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <TextView
+            android:id="@+id/Room_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:background="@android:drawable/bottom_bar"
+            android:hint="Room Name"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:dividerHeight="16dp"
+            android:divider="@android:color/transparent"
+            android:id="@+id/list_of_messages"
+            android:layout_marginBottom="50dp"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/ic_send"
+            android:id="@+id/fab"
+            android:tint="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:fabSize="mini"
+            android:background="@color/colorAccent" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/fab"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/fab">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input"
+                android:hint="@string/input"
+                android:background="@android:drawable/editbox_background_normal" />
+
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_about2"
+        app:menu="@menu/navigation_menu">
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout >

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent" android:layout_height="wrap_content"
+android:layout_margin="20dp">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_username"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:hint="@string/post_user_" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_datetime"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:hint="@string/post_date_and_time" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_image"
+        android:src="@mipmap/add_btn"
+        tools:ignore="ContentDescription"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_vertical|center_horizontal|center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:hint="@string/post_title_hint"
+        android:paddingBottom="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_content"
+        android:textSize="16sp"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:hint="@string/post_content_hint" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_thumb_up_gray_24dp"
+            android:id="@+id/like"
+            android:contentDescription="@string/like"
+            android:background="#00ffffff"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

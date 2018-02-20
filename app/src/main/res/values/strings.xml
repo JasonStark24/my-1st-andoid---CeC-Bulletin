@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">CeC-Bulletin</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="full_name">Name</string>
+    <string name="opendrawer">Open</string>
+    <string name="closedrawer">Close</string>
+    <string name="my_account">Account</string>
+    <string name="register">Register</string>
+    <string name="already_registerd_click_here">Already Registerd? Click here.</string>
+    <string name="add_post">Add Post</string>
+    <string name="suggestions">Suggestions</string>
+    <string name="post_content">Post Content</string>
+    <string name="post_title">Post Title...</string>
+    <string name="submit">Submit</string>
+    <string name="chat">Chat Room</string>
+    <string name="settings">Settings</string>
+    <string name="enter_your_display_name">First &amp; Last Name</string>
+    <string name="finish_setup">Finish Setup</string>
+    <string name="cec_bulletin_login">CeC Bulletin Sign In</string>
+    <string name="cec_bulletin_sign_up">CeC Bulletin Sign Up</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="post">Post</string>
+    <string name="address">Address</string>
+    <string name="age">Age</string>
+    <string name="birthday">Birthday</string>
+    <string name="id_number">ID Number</string>
+    <string name="account_setup">Profile Information</string>
+    <string name="sign_in">Sign In</string>
+    <string name="profile" />
+    <string name="set_your_birthday">mm/dd/yyyy</string>
+    <string name="need_new_account_click_here">Dont have an account? Click here to register.</string>
+    <string name="post_title_hint">Post Title</string>
+    <string name="post_content_hint">Post Content</string>
+    <string name="post_user_">Post User</string>
+    <string name="post_date_and_time">Post Date and Time</string>
+    <string name="prof_img">prof_img</string>
+    <string name="username_nav">Username</string>
+    <string name="like">like</string>
+    <string name="username_who_post">Username Who Post</string>
+    <string name="time">Time</string>
+    <string name="post_title_Single">Post Title</string>
+    <string name="post_content_single">Post Content</string>
+    <string name="remove_post">REMOVE POST</string>
+    <string name="single_image">single_image</string>
+    <string name="set">SET DOB</string>
+    <string name="input">Input</string>
+    <string name="logout">Logout</string>
+    <string name="bulletin_post">Bulletin Post</string>
+    <string name="about">About</string>
+    <string name="my_posts">My Posts</string>
+    <string name="add_image">Add Image...</string>
+    <string name="postnoimage" />
+    <string name="address_prof">Address</string>
+    <string name="course_prof">Course</string>
+    <string name="date_of_birth_prof">Date of Birth</string>
+    <string name="first_and_last_name_prof">First and Last name</string>
+    <string name="id_number_prof">Id Number</string>
+    <string name="my_profile_information_prof">My Profile Information</string>
+    <string name="sex_prof">Sex</string>
+    <string name="year_level_prof">Year Level</string>
+    <string name="someimage">img_prof</string>
+    <string name="update_prof">Update</string>
+    <string name="bulletin">Bulletin</string>
+    <string name="title_section1">Chat Room</string>
+
+    <string-array name="Course">
+        <item>BSIT</item>
+        <item>BSCS</item>
+    </string-array>
+
+    <string-array name="Year_Level">
+        <item>Fourth Year</item>
+        <item>Third Year</item>
+        <item>Second Year</item>
+        <item>First Year</item>
+        <item>Senior High</item>
+    </string-array>
+
+    <string-array name="Sex">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_nav_drawer_acc">NavDrawerAcc</string>
+    <string name="title_activity_nav_drawer">NavDrawer</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_closed">Closed</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="post_image">post_image</string>
+    <string name="title_activity_about2">About2</string>
+    <string name="title_activity_login_room">Login_room</string>
+    <string name="title_activity_profile__navigation2">Profile_Navigation2</string>
+    <string name="title_activity_promote__account">Promote_Account</string>
+    <string name="title_activity_promote">Promote</string>
+
+</resources>

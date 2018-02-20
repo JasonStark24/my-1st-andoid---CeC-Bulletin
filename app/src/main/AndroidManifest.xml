@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.micropulse7.cec_bulletin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    ﻿
+    <application
+        android:name=".FirebaseConn"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Mobile Bulletin"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LogInAct"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".BulletinPostAcc"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".RegisterAct"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PostAct"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MessageAct"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SetupAccount"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SingleViewPost" />
+        <activity
+            android:name=".ProfileAct"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".GetID" />
+        <activity android:name=".students_list" />
+        <activity android:name=".FinesProgram" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Room" />
+        <activity android:name=".FinesAct" />
+        <activity android:name=".AddFines" />
+        <activity
+            android:name=".About"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".About2"
+            android:label="@string/title_activity_about2"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Login_room"
+            android:label="@string/title_activity_login_room"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Profile_Navigation2"
+            android:label="@string/title_activity_profile__navigation2"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Suggestion" />
+        <activity android:name=".AddSuggestion" />
+        <activity
+            android:name=".Promote_Account"
+            android:label="@string/title_activity_promote__account"
+            android:theme="@style/AppTheme" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <activity
+            android:name=".Promote"
+            android:label="@string/title_activity_promote"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

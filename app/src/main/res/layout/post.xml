@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:label="@string/post"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.micropulse7.cec_bulletin.PostAct">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine|textPersonName"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:id="@+id/post_TitleField"
+        android:layout_below="@+id/imageSelect"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:hint="@string/post_title" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine|textLongMessage|textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/post_TitleField"
+        android:background="@drawable/input_background"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/post_ContentField"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:hint="@string/post_content" />
+
+    <ImageButton
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        app:srcCompat="@mipmap/add_btn"
+        android:id="@+id/imageSelect"
+        android:contentDescription="@string/post_image"
+        android:background="@color/colorPrimary"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:foregroundGravity="center" />
+
+    <Button
+        android:text="@string/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitBtn"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/post_ContentField"
+        android:layout_alignStart="@+id/post_ContentField"
+        android:layout_marginBottom="10dp"
+        android:layout_alignRight="@+id/post_ContentField"
+        android:layout_alignEnd="@+id/post_ContentField" />
+
+</RelativeLayout>
